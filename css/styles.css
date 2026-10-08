@@ -14,7 +14,7 @@
    -------------------------------------------------------------------------- */
 @font-face {
     font-family: "Unbounded";
-    src: url("fonts/Unbounded-Bold.ttf") format("truetype");
+    src: url("../fonts/Unbounded-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -67,7 +67,7 @@ p {
     color: #FFFFFF;
 }
 
-a {
+a{
     color: #FFFFFF;
     text-decoration: none;
     font-size: 24px;    
@@ -76,6 +76,8 @@ a {
     width: 340px;
     height: 66px;
     text-align: center;
+    display: flex;
+    justify-content: center;
     line-height: 66px;
     border-radius: 36px;
     margin: 40px auto;
@@ -89,7 +91,8 @@ section img {
     display: block;
     width: 792;
     height: 446;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* --------------------------------------------------------------------------
