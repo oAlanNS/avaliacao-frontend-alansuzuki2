@@ -1,0 +1,110 @@
+/* ==========================================================================
+   PROJETO TECBOARD - ESTILOS GLOBAIS
+   Arquivo: css/styles.css
+   
+   FLUXO GIT:
+   - Correções visuais da Hero Section devem ser feitas na branch:
+     git checkout -b fix/correcoes-css
+   - Novas estilizações do formulário devem ser feitas na branch:
+     git checkout -b feat/pagina-cadastro
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. IMPORTAÇÃO DE FONTES LOCAIS E RESET
+   -------------------------------------------------------------------------- */
+@font-face {
+    font-family: "Unbounded";
+    src: url("fonts/Unbounded-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #0E1014;
+    color: #FFFFFF;
+}
+
+header img {
+    display: block;
+    margin: 75px auto 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   2. HERO SECTION
+   -------------------------------------------------------------------------- */
+h1 {
+    font-size: 80px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1 span {
+    color: #9747FF;
+}
+
+p {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 24px;
+    color: #FFFFFF;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;    
+    font-family: "Poppins", sans-serif;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto;
+}
+
+a:hover {
+    background-color: #8233E8;
+}
+
+section img {
+    display: block;
+    width: 792;
+    height: 446;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   3. FORMULÁRIO DE CADASTRO (cadastro.html)
+   Desenvolva as regras do formulário abaixo durante a branch feat/pagina-cadastro
+   -------------------------------------------------------------------------- */
+#cadastro {
+    width: 800px;
+    margin: 60px auto;
+    font-family: "Poppins", sans-serif;
+}
+
+#cadastro h2 {
+    font-family: "Unbounded", sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #9747FF;
+}
