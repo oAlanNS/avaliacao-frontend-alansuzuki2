@@ -100,6 +100,8 @@ section img {
     width: 800px;
     margin: 60px auto;
     font-family: "Poppins", sans-serif;
+    background-color: #0E1014;
+    color: #FFFFFF;
 }
 
 #cadastro h2 {

@@ -30,6 +30,175 @@
             <h2>Solicite seu Acesso e Configure sua Aplicação</h2>
 
             <form action="#" method="post">
+                <fieldset>
+                <legend>Dados do Responsável</legend>
+                <label for="user">Nome:</label>
+                <input 
+                id="user" 
+                type="text" 
+                name="userName" 
+                required
+                >
+                <br>
+
+                <label for="userAge">Idade:</label>
+                <input 
+                type="number" 
+                name="userAge" 
+                required 
+                min="16" 
+                max="100"
+                >
+                <br>
+                
+                <label for="userDate">Data de solicitação:</label>
+                <input 
+                type="date" 
+                name="userDate"
+                >
+                <br>
+
+                <label for="userEmail">Email corporativo:</label>
+                <input 
+                type="email" 
+                name="userEmail" 
+                required 
+                >
+                <br>
+                <label for="userPhoneNumber">Número de telefone de plantão:</label>
+                <input type="tel" 
+                name="userPhoneNumber" 
+                pattern="[0-9]{11}" 
+                placeholder="12123456789"
+                >
+                <br>
+
+                <label for="userImage">Upload de logotipo de aplicação:</label>
+                <br>
+                <input type="file" 
+                accept = "image/*" 
+                name="userImage"
+                >
+                <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perfil de aplicação e preferências</legend>
+                <p>Porte da infraestrutura: </p>
+                <input type="radio" 
+                name="userInfrastructure" 
+                value="pequeno" 
+                id="pequeno"
+                >
+                <label for="pequeno">Pequeno</label>
+                <br>
+
+                <input type="radio" 
+                name="userInfrastructure" 
+                value="medio" 
+                id="medio"
+                >
+                <label for="medio">Médio</label>
+                <br>
+
+                <input type="radio" 
+                name="userInfrastructure" 
+                value="grande" 
+                id="grande">
+                <label for="grande">Grande</label>
+                <br>
+
+                <label for="userState"> Estado da sede:</label>
+                <select name="userState" required>
+                    <option value="naoinformado" selected hidden>Selecione...</option>
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceará</option>
+                </select>
+                <br>
+
+                <label for="mainStack">Stack principal:</label>
+                <input 
+                id ="mainStack" 
+                name ="userMainStack" 
+                type="text" 
+                list="stackType"
+                >
+                <datalist id="stackType">
+                    <option value="Notificação">
+                    <option value="Anydesk">
+                    <option value="Bot Notification">
+                    <option value="Monitoramento por bot">
+                </datalist>
+                <br>
+                 
+                <label for="themeColor">Cor do tema: </label>
+                <input 
+                id="themeColor" 
+                name="userThemeColor" 
+                type="color"
+                >
+                <br>
+
+                <p>Canais de alerta:</p>
+                <input type="checkbox" 
+                name="social" 
+                value="e-mail"
+                id="e-mail"
+                >
+                <label for="e-mail">E-mail</label>
+                <br>
+
+                <input type="checkbox" 
+                name="social" 
+                value="SMS" 
+                id="SMS"
+                >
+                <label for="SMS">SMS</label>
+                <br>
+
+                <input type="checkbox" 
+                name="social" 
+                value="webhook" 
+                id="webhook"
+                >
+                <label for="webhook">webhook</label>
+                <br>
+
+                <input type="checkbox" 
+                name="social" 
+                value="webhook" 
+                id="webhook"
+                >
+                <label for="webhook">Webhook</label>
+                <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Termos e Confrimação</legend>
+                    <label for ="userObservation">Deixe sua observação técnica:</label>
+                    <br>
+                    <textarea 
+                    name="userObservation" 
+                    id="userObservation"
+                    placeholder="Digite aqui sua observação..."
+                    ></textarea>
+                    <br>
+
+                    <input type="checkbox" 
+                    id="userLgpd" 
+                    name="userLgpd" 
+                    value="accepted" 
+                    required
+                    >
+                    <label for="userLgpd">Eu aceito os termos</label>
+                    <br>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </fieldset>
                 <!-- Construa os blocos de fieldset do formulário aqui -->
             </form>
         </section>
